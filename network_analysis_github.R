@@ -80,7 +80,7 @@ length(which(keep_periodontitis_mean%in%core_species$Row.names))
 
 #Create a network using Spieceasi with positive and negative connections
 #samples as rows and microbiomes as columns
-net_spieceasi_periodontitis_allConnections <- netConstruct(t(data4_periodontitis_5),
+net_spieceasi_periodontitis_allConnections = netConstruct(t(data4_periodontitis_5),
                            dataType = "counts",
                            filtTax = c("none"),
                            measure = "spieceasi", 
@@ -94,7 +94,7 @@ net_spieceasi_periodontitis_allConnections <- netConstruct(t(data4_periodontitis
  
 
 #Analyze the network
-props_pears_periodo_allConnections <- netAnalyze(net_spieceasi_periodontitis_allConnections, 
+props_pears_periodo_allConnections = netAnalyze(net_spieceasi_periodontitis_allConnections, 
                           centrLCC = FALSE,
                           avDissIgnoreInf = TRUE,
                           sPathNorm = FALSE,
@@ -142,7 +142,7 @@ plot(props_pears_periodo_allConnections,
 dev.off()
 
 #Network for healthy
-net_spieceasi_healthy_allConnections <- netConstruct(t(data4_healthy_5),
+net_spieceasi_healthy_allConnections = netConstruct(t(data4_healthy_5),
                                                            dataType = "counts",
                                                            filtTax = c("none"),
                                                            measure = "spieceasi",
@@ -154,7 +154,7 @@ net_spieceasi_healthy_allConnections <- netConstruct(t(data4_healthy_5),
                                                            cores = 20, dissFunc = "signed",  weighted = TRUE, verbose = 2, 
                                                            seed = 123456)
 
-props_pears_healthy_allConnections <- netAnalyze(net_spieceasi_healthy_allConnections, 
+props_pears_healthy_allConnections = netAnalyze(net_spieceasi_healthy_allConnections, 
                                   centrLCC = FALSE,
                                   avDissIgnoreInf = TRUE,
                                   sPathNorm = FALSE,
