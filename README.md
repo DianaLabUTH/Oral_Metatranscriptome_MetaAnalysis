@@ -1,2 +1,2 @@
 # Oral_Metatranscriptome_MetaAnalysis
-The code for the paper "Microbial Signatures in Human Periodontal Disease: A  Metatranscriptome Meta-Analysis"
+Here, the code scripts for the article 'Microbial Signatures in Human Periodontal Disease: A Metatranscriptome Meta-Analysis' https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2024.1383404/full is presented
